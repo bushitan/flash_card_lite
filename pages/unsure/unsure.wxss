@@ -1,0 +1,17 @@
+/* pages/unsure/unsure.wxss */
+
+
+.face_bg{ 
+    background-color:#e64340;
+}
+.back_bg{ 
+    background-color:#ce3c39;
+}
+.face_font{
+    font-size: 12pt;
+    color: #fff; 
+}
+.back_font{
+    font-size: 9pt;
+    color: #eee; 
+}

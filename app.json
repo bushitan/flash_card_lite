@@ -1,0 +1,29 @@
+{
+    "pages":[
+        "pages/mode/mode",
+        "pages/bank/bank",
+        "pages/stranger/stranger",
+        "pages/add/add",
+        "pages/unsure/unsure",
+        "pages/sure/sure",
+        "pages/my/my"
+
+    ],
+    "window":{
+        "backgroundTextStyle":"light",
+        "navigationBarBackgroundColor": "#d34531",
+        "navigationBarTitleText": "翻牌背单词",
+        "navigationBarTextStyle":"white",
+        "enablePullDownRefresh":false
+    },
+   
+    "networkTimeout": {
+        "request": 30000,
+        "uploadFile":30000,
+        "downloadFile": 15000
+    },
+    "debug": true
+
+}
+
+

@@ -1,0 +1,49 @@
+
+
+
+/* 标题颜色 #151515； */
+ /* 描述的颜色 #8d8d8d; */
+ /* 时间灰色： #b4b4b4 */
+/* 绿色 #1AAD19 */
+/* 华讯蓝（浅色）：187bbf */
+
+/* taber 图标  浅色： #b3b3b3 */
+/* taber 图标  深色 #212121    */
+
+.xx_f_14{
+    font-size: 14pt;
+    color: #151515;
+}
+.xx_f_11{
+    font-size: 11pt;
+    color: #151515;
+}
+.xx_f_10{
+    font-size: 10pt;
+    color: #151515;
+}
+.xx_f_9{
+    font-size: 9pt;
+    color: #8d8d8d; 
+}
+.xx_f_7{
+    font-size: 8pt;
+    color: #b4b4b4; 
+}
+
+/* 绿色的字 */
+.xx_f_primary{
+    color:#1AAD19 !important;
+}
+/* 华讯的蓝色 */
+.xx_f_hx{
+    color:#187bbf  !important;
+}
+/* 描述的颜色 */
+.xx_f_des{
+    color:#8d8d8d !important;
+}
+/* 描述的颜色 */
+.xx_f_date{
+    color:#b4b4b4 !important;
+}

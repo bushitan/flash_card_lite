@@ -1,0 +1,141 @@
+/* pages/mode/mode.wxss */
+
+.card{
+     align-items: center;
+       padding: 30rpx  75rpx 0;  
+}
+.card_none{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40pt;
+    color: #eeede8;
+}
+
+.menu{
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+.mode{
+    color: #fff;
+    display: flex;
+     justify-content: space-around; 
+    align-content: center;
+    text-align: center;
+    border-radius: 50%;
+    
+}
+.mode_bg_center{
+    width: 70px;
+    height: 70px;
+    margin: 0 40px;
+    background-color: #eeede8;
+    box-shadow:0px 1px 1px #828282 inset;
+}
+
+.mode_bg_center .node{
+    margin: auto;
+     line-height: 58px;
+    font-size: 17pt;
+     overflow:hidden;    
+     width: 58px;
+    height: 58px; 
+    /* color: #ec563e; */
+    
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow:0px 1px 1px #828282;
+    font-weight: bold;
+}
+
+
+.mode_bg_sub{
+    width: 60px;
+    height: 60px;
+    /* margin: 10px 0; */
+    background-color: #eeede8;
+    box-shadow:0px 1px 1px #828282 inset;
+}
+
+.mode_bg_sub .node{
+    margin: auto;
+     line-height: 49px;
+    font-size: 14pt;
+     overflow:hidden;    
+     width: 49px;
+    height: 49px; 
+    color: #ec563e;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow:0px 1px 1px #828282;
+    font-weight: bold;
+    
+    display: flex;
+     justify-content: space-around; 
+    align-content: center;
+}
+.mode_bg_sub image{
+    margin: auto;
+    width: 21px;
+    height: 21px;
+}
+
+
+.click {
+    background-color: #eee !important;
+}
+
+
+
+.level_color_1{
+    color: #8a8a8a;
+}
+
+.level_color_2{
+    color: #ec563e;
+}
+
+.level_color_3{
+    color: #47c446;
+}
+
+
+.mark_node_left{
+
+     left: -10px; 
+    border-radius:  0  50% 50% 0;
+}
+.mark_node_right{
+    right: -10px; 
+    border-radius:  50% 0 0 50%;
+
+}
+.mark_node_left ,.mark_node_right{
+    z-index:1000;
+    position: fixed;
+    top: 50vh;
+    display: flex;
+     justify-content: space-around; 
+     align-content: center; 
+    margin: auto;
+    line-height: 58px;
+    font-size: 17pt; 
+    width: 58px;
+    height: 58px; 
+    background-color: #fff;
+    box-shadow:0px 1px 1px  #828282;
+    font-weight: bold;
+}
+
+
+
+
+

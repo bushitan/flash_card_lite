@@ -1,0 +1,25 @@
+<!--pages/sure/sure.wxml-->
+
+
+<!-- <view class='xx_f_10 xx_m_t8 card_foot' >生词库（四六级）</view>
+<view class='xx_f_7 xx_m_t4 card_foot' >每日随机更新</view>
+<view class='xx_f_7 xx_m_t4 card_foot' >点击卡牌看解释</view>
+<view class='xx_f_7 xx_m_t4 card_foot' >长按卡牌，添加至"陌生"栏</view> -->
+ <scroll-view scroll-x="true" class='scroll-view_tab'>
+        <!-- 时间选择按钮 -->
+    <view class='xx_flex ' >
+            <block wx:for="{{tagList}}">
+            <view class='xx_tab' catchtap="clickTag" data-tag_index="{{index}}">
+                <view class="xx_tab__node  {{index == tagIndex ? 'xx_tab__select':''}} ">
+                    {{item.tag_name}} 
+                </view>
+            </view>           
+        </block> 
+    </view>
+</scroll-view>
+ <import src="../../template/card.wxml" />
+<template is="card_default" data="{{coverList: coverList}}"/>   
+
+<view class='xx_f_7 xx_m_t30 card_foot' >----（每日随机更新）----</view>
+<view class='xx_f_7 card_foot  xx_m_t4 xx_m_b60'  >一口吃不成胖子，暂时就这么多了...</view>
+<button catchtap='toAddPage' size='mini' type="primary">添加生词卡</button>

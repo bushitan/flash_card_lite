@@ -1,0 +1,42 @@
+/* pages/sure/sure.wxss */
+
+button {
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+     /* box-shadow:2px 5px 5px #efefef;  */
+}
+.face_bg{ 
+    background-color:#e8e8e8;
+}
+.back_bg{ 
+    background-color:#d4d4d4;
+}
+.face_font{
+    font-size: 12pt;
+    color: #121212; 
+    padding-bottom: 4px;
+    border-bottom: 1rpx solid #d8d8d8;
+}
+.back_font{
+    padding-top: 4px;
+    font-size: 9pt;
+    color: #888; 
+}
+
+.btn{
+      flex-basis:70px; 
+}
+
+.xx_m_t60{
+    margin-top: 10px!important;
+}
+
+.scroll_bg{
+    background-color: #f8f8f8;
+}
+.xx_tab__select{
+    color:#d34531;
+border-bottom:2px #d34531 solid;
+
+}

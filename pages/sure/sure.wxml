@@ -1,0 +1,18 @@
+<!--pages/sure/sure.wxml-->
+<!-- <view class='xx_f_7 xx_m_t8 card_foot' wx:if="{{coverList.length == 0}}">"生词库"能方便添加生词</view>
+<view class='xx_f_7 xx_m_t8 card_foot'  wx:else>卡片点击能"翻面"，长按"分类"</view> -->
+
+<view class='xx_f_10 xx_m_t8 card_foot' >牢记词汇</view>
+<view class='xx_f_7 xx_m_t8 card_foot'  >每周瞧一瞧</view>
+<view class='xx_f_7 xx_m_t8 card_foot'  >忘掉了，就打回"陌生"栏</view>
+
+
+<import src="../../template/card.wxml" />
+<template is="card_default" data="{{coverList: coverList}}"/>  
+
+<view class='xx_f_7 card_foot xx_m_t30'   wx:if="{{coverList.length == 0}}">"牢记"栏还没有单词卡...</view>
+<view wx:else>
+    <view class='xx_f_7  card_foot  xx_m_t30' >点击卡片看解释</view>
+    <view class='xx_f_7 xx_m_t4 card_foot' >长按卡片，选择分栏</view>
+    <view class='xx_f_7 xx_m_t4 card_foot xx_m_b15' >详细技巧，请看"小技巧"栏</view>
+</view>

@@ -1,0 +1,51 @@
+<template name="card_default">
+    <view class='xx_flex xx_flex__around '>
+        <view class='width_100 '>
+            <block wx:for="{{coverList}}" >
+                <view wx:if="{{index%2 == 0}}">
+                    <template is="card_node" data="{{item: item ,  sideCss: 'xx_p_l15r8'}}"/>    
+                </view>
+            </block>  
+        </view>
+        <view class='width_100  '>
+            <block wx:for="{{coverList}}" >
+                <view wx:if="{{index%2 == 1}}">
+                    <template is="card_node" data="{{item: item , sideCss: 'xx_p_l8r15'}}"/>  
+                </view>
+            </block>  
+        </view>
+    </view> 
+</template>
+
+<template name="card_node">
+            <view class='card '  bindtap='add'   data-card_id="{{item.card_id}}" data-face_title="{{item.face_title}}" data-back_explain="{{item.back_explain}}" >        
+                 <view class='xx_p_t15 {{sideCss}}'>
+                <view class='card_content xx_p_lr6  xx_p_t8 xx_p_b8 {{item.is_face == true?"face_bg":"back_bg" }} '>
+                    <view class='face_font ' > 
+                         <text>{{item.face_title}}</text>
+                    </view>
+                    <view class='back_font '>
+                            <text>{{item.back_explain}}</text>
+                    </view>
+                </view>
+            </view>
+         </view> 
+</template>
+
+
+
+
+<!-- <template name="card_node">
+            <view class='card '  bindtap='changeFace'  bindlongpress='setLevelOrDelete'  data-card_id="{{item.card_id}}" data-face_title="{{item.face_title}}" data-back_explain="{{item.back_explain}}" >        
+              <view class='xx_p_t15 {{sideCss}}'>
+                <view class='card_content xx_p_lr6  xx_p_t8 xx_p_b8 {{item.is_face == true?"face_bg":"back_bg" }} '>
+                    <view class='face_font ' wx:if="{{item.is_face}}"> 
+                         <text>{{item.face_title}}</text>
+                    </view>
+                    <view class='back_font ' wx:else>
+                            <text>{{item.back_explain}}</text>
+                    </view>
+                </view>
+            </view>
+         </view> 
+</template> -->

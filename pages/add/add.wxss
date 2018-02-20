@@ -1,0 +1,22 @@
+/* pages/add/add.wxss */
+/*栏目分割线  */
+
+.input_area{
+    width:100%;
+}
+
+.xx_input__name {
+    line-height: 10pt;
+}
+.space{
+    content: "";
+    /* border-bottom: 1rpx #f0f0f0 solid; */
+    height: 10px;
+    background-color: #f0f0f0;
+}
+textarea{
+    height: 60px !important;
+    border: 1rpx #f0f0f0 solid;   
+     /* padding-left: 3px;   */
+     /* padding-top: 1px;   */
+}

@@ -1,0 +1,39 @@
+<!--pages/mode/mode.wxml-->
+
+<view class='card xx_flex '>
+    <view  wx:if="{{firstCard==''}}" class="card_none " >空</view>
+    <userItem  wx:else
+    userItem="{{firstCard}}" level="{{currentLevel}}"  cardNum="{{stepNum +1}}"
+    bind:touchClick="changeFace"
+    bind:leftEvent="clickNo"
+    bind:rightEvent="clickYes"
+    bind:deletEvent="clickDelete"
+    ></userItem>
+    
+</view>
+
+<template is="mark" data="{{rightColor:'level_color_2' ,rigthName:'巩'}}" wx:if="{{currentLevel==STRANGER}}"/>
+<template is="mark" data="{{rightColor:'level_color_3' ,rigthName:'牢'}}" wx:else/>
+
+<template name="mark">
+         <view class='mark_node_left level_color_1'   >陌</view>
+         <view class='mark_node_right {{rightColor}}'   >{{rigthName}}</view>
+</template>
+
+<view class='menu'>
+    <view class='mode mode_bg_sub' catchtap='clickToPageBank'>
+      <view class='node' hover-class="click">
+            <image src='../../images/add.png'></image>
+         </view>           
+    </view>
+    <view class='mode mode_bg_center' catchtap='clickSetLevel'>
+         <view class='node level_color_1'  hover-class="click" wx:if="{{currentLevel == STRANGER}}">陌</view>
+         <view class='node level_color_2'  hover-class="click" wx:elif="{{currentLevel == UNSURE}}">巩</view>
+         <view class='node level_color_3'  hover-class="click" wx:else>牢</view>
+    </view>
+    <view class='mode mode_bg_sub' catchtap='clickToPageMy' > 
+        <view class='node' hover-class="click">
+            <image src='../../images/ask.png'></image>
+         </view>    
+    </view>
+</view>

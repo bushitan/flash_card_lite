@@ -1,0 +1,114 @@
+/* components/common/userItem/userItem.wxss */
+
+.cell-checked{
+  background-color: #F5F5F5;
+}
+.cell-nopadding{
+  padding: 0;
+  font-size: 0;
+  width: 750rpx;
+  height: 148rpx;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+.cell-tansiton{
+  transition: all 0.3s linear;    
+}
+.cell-inner{
+  width: 1000rpx;
+  position: absolute;
+  top:0;
+}
+.cell-innershow{
+  left: -250rpx;
+}
+.cell__fl{
+  float: left;
+}
+.cell__fr{
+  float: right;
+}
+.p-5{
+  padding: 5rpx;
+}
+.cell_footer{
+  font-size:0;
+  position:absolute;
+  right:-250rpx;
+}
+.contact-avatar-box{
+  margin:30rpx 20rpx 30rpx;
+  width:88rpx; 
+  height: 88rpx; 
+  border-radius: 50rpx;
+  overflow: hidden;
+}
+.contact-avatar{
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+.contact-name{
+  font-size: 32rpx;
+  font-family: HelveticaNeue-Medium;
+  color: #222222;
+  height: 40rpx;
+  line-height: 40rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  max-width:600rpx;
+}
+.name-view{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+}
+.contact-coname{
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  color: #888888;
+  height: 50rpx;
+  line-height: 50rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  max-width:600rpx;
+}
+.contact-btn{
+  display:inline-block;
+  height: 148rpx;
+  line-height: 148rpx;
+  border-radius: 0;
+  padding: 0;
+  width: 120rpx;
+  overflow: hidden;
+  font-size: 28rpx;
+  color: #fff;
+}
+.mini-btn1 {
+    background: rgba(0,119,255,0.70);
+}
+.mini-btn2 {
+    background: rgba(255,0,34,0.70);
+}
+.add-btn{
+  position: fixed;
+  right: 10rpx;
+  bottom: 20rpx;
+  background-color: transparent;
+}
+.add-btn::after{
+  border: none;
+}
+.add-icon{
+  width: 60rpx;
+  height: 60rpx;
+}
+.no-more{
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #666;
+}

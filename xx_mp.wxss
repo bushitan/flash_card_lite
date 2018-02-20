@@ -1,0 +1,99 @@
+
+/* 外间隔 */
+.xx_m_all15{
+    margin: 15px;
+}
+
+.xx_m_t40{
+    margin-top: 40px;
+}
+.xx_m_t60{
+    margin-top: 60px;
+}
+.xx_m_t30{
+    margin-top: 30px;
+}
+.xx_m_t15{
+    margin-top: 15px;
+}
+
+.xx_m_lr15{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.xx_m_b60{
+    margin-bottom: 60px;
+}
+.xx_m_b40{
+    margin-bottom: 40px;
+}
+.xx_m_b15{
+    margin-bottom: 15px;
+}
+.xx_m_b8{
+    margin-bottom: 8px;
+}
+
+.xx_m_t10{
+    margin-top: 10px;
+}
+
+
+.xx_m_t8{
+    margin-top: 8px;
+}
+.xx_m_t6{
+    margin-top: 6px;
+}
+
+.xx_m_t4{
+    margin-top: 4px;
+}
+
+/* 上左右 */
+
+.xx_m_t15_lr15{
+    margin: 15px 15px 0; 
+}
+
+
+
+/* 内嵌 */
+.xx_p_all15{
+    padding: 15px;
+}
+
+.xx_p_t15{
+    padding-top: 15px;
+}
+.xx_p_t8{
+    padding-top: 8px;
+}
+.xx_p_t4{
+    padding-top: 4px;
+}
+.xx_p_lr15{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.xx_p_lr6{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.xx_p_l15r8{
+    padding-left: 15px;
+    padding-right: 8px;
+}
+.xx_p_l8r15{
+    padding-left: 8px;
+    padding-right: 15px;
+}
+
+.xx_p_b15{
+    padding-bottom: 15px;
+}
+
+.xx_p_b8{
+    padding-bottom: 8px;
+}

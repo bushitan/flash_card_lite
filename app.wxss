@@ -1,0 +1,45 @@
+/**app.wxss**/
+/* @import 'weui.wxss'; */
+@import 'xx.wxss';
+@import 'xx_font.wxss';
+@import 'xx_mp.wxss';
+
+page{
+      background-color: #fff;  
+     /* background-color: #eeeeee;  */
+    font-size: 16px;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif,Microsoft YaHei;
+    font-family : "Microsoft YaHei";
+}
+
+.width_100{
+    width:100%
+}
+
+.card {
+    /* float: left; */
+    /* width: 50%; */
+}
+.card_foot{
+    text-align: center;
+}
+.card_content{
+    border-radius:5px;
+    box-shadow:0px 2px 5px #efefef;
+}
+
+.card_title_border{
+    font-size: 11pt;
+    /* border-left: 2px #187bbf solid; */
+    border-left: 2px #ec563e solid;
+    
+    padding-left: 5px;  
+}
+
+
+
+
+
+
+
+

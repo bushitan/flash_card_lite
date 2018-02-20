@@ -1,0 +1,52 @@
+<!--pages/together/together.wxml-->
+<view class="page"  >
+    <!-- <view class="xx_menu ">
+        <view  url="" class="xx_menu__node ">
+            <view class="xx_menu__node_logo" catchtap="clickLogin">
+                <image src="{{userInfo == ''?'../../images/click_login.png':userInfo.avatarUrl}}" ></image>
+            </view>
+            <view class="xx_menu__node_name">
+                    <view class="xx_text__title">{{userInfo.nickName}}</view>
+            </view>
+        </view>
+    </view> -->
+
+   <!-- <view class="head_logo space_bottom" >
+        <image src="{{logo == ''?'../../images/click_login.png':logo}}" catchtap='userLogin'></image>
+    </view> -->  
+    <view class='xx_m_t15_lr15'>
+        <view class='card_title_border ' >背单词小技巧（仅需三分钟、受用一辈子）</view>
+    </view>
+    <view class='xx_flex xx_flex__center xx_m_t15'>
+        <image class='example' src="{{exampleUrl}}" catchtap='preview_example'></image>
+    </view>   
+    <view  class='xx_m_lr15 xx_m_t8 xx_f_10 xx_f_des'>
+            <rich-text nodes="{{example}}" /> 
+    </view>
+    <view class='xx_flex xx_flex__center xx_m_t15 xx_m_b15'>
+        <image class='zan' src="{{zanUrl}}" catchtap='preview_zan' style='margin-right:4px'></image>
+        <image class='zan' src="{{bushitanUrl}}" catchtap='preview_bushitan'></image>
+    </view>
+
+    <!-- <button catchtap='addCard' size='mini' type="primary">打赏</button> -->
+
+    <!-- <view class="scroll_y_img " >    
+        <view class='scroll_y_img__title'>辅助小工具 </view>    
+          <view class="bottom-border "></view> 
+         <block wx:for="{{adList}}">
+            <view catchtap='previewImage' data-image_url="{{item.img_url}}" class='screen__space_around margin__space_all_15 ' >  
+                 <view > 
+                    <image class='icon_96' src="{{item.img_url}}" mode="aspectFit" ></image>
+                 </view> 
+                <view class='margin__space_left_5'>
+                    <view class='title' >
+                        {{item.title}}
+                    </view>
+                    <view class='description' >
+                        {{item.description}}
+                    </view>
+                </view>
+            </view>  
+        </block>
+    </view> -->
+</view>

@@ -1,0 +1,24 @@
+/* pages/stranger/stranger.wxss */
+
+button {
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+     /* box-shadow:2px 5px 5px #efefef;  */
+}
+
+
+.face_bg{ 
+    background-color:#e8e8e8;
+}
+.back_bg{ 
+    background-color:#d4d4d4;
+}
+.face_font{
+    font-size: 12pt;
+    color: #121212; 
+}
+.back_font{
+    font-size: 9pt;
+    color: #353535; 
+}

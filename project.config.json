@@ -1,0 +1,58 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.1",
+	"appid": "wx268b675d35da789c",
+	"projectname": "%E7%BF%BB%E7%89%8C%E8%83%8C%E5%8D%95%E8%AF%8D",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "my",
+					"pathName": "pages/my/my",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "bank",
+					"pathName": "pages/bank/bank",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "陌生",
+					"pathName": "pages/stranger/stranger",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "确定",
+					"pathName": "pages/sure/sure",
+					"query": ""
+				}
+			]
+		}
+	}
+}

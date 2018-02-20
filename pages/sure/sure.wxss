@@ -1,0 +1,16 @@
+/* pages/sure/sure.wxss */
+
+.face_bg{ 
+    background-color:#09bb07;
+}
+.back_bg{ 
+    background-color:#179b16;
+}
+.face_font{
+    font-size: 12pt;
+    color: #fff; 
+}
+.back_font{
+    font-size: 9pt;
+    color: #eee; 
+}

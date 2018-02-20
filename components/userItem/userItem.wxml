@@ -1,0 +1,61 @@
+<!--components/common/userItem/userItem.wxml-->
+<!-- {{userItem.is_face == true?'face_bg_green':'back_bg_green' }} -->
+<view class='box'>
+
+    <template is="card_template"  wx:if="{{ level == STRANGER &&  userItem.is_face == true}}"
+     data="{{bg: 'f_bg_gray',f_c:'f_color_gay' , b_c:'b_color_gay' ,transitonDone:transitonDone ,nowLeft:nowLeft ,userItem:userItem ,cardNum:cardNum}}"  />
+    <template is="card_template"  wx:if="{{ level == UNSURE &&  userItem.is_face == true}}"
+     data="{{bg: 'f_bg_red',f_c:'f_color_red' , b_c:'b_color_red' ,transitonDone:transitonDone ,nowLeft:nowLeft ,userItem:userItem ,cardNum:cardNum}}"  />
+    <template is="card_template"  wx:if="{{ level == SURE &&  userItem.is_face == true}}"
+     data="{{bg: 'f_bg_green',f_c:'f_color_green' , b_c:'b_color_green' ,transitonDone:transitonDone ,nowLeft:nowLeft ,userItem:userItem ,cardNum:cardNum}}"  />
+
+    <template is="card_template"  wx:if="{{ level == STRANGER &&  userItem.is_face == false}}"
+     data="{{bg: 'b_bg_gray',f_c:'f_color_gay' , b_c:'b_color_gay' ,transitonDone:transitonDone ,nowLeft:nowLeft ,userItem:userItem ,cardNum:cardNum}}"  />
+    <template is="card_template"  wx:if="{{ level == UNSURE &&  userItem.is_face == false}}"
+     data="{{bg: 'b_bg_red',f_c:'f_color_red' , b_c:'b_color_red' ,transitonDone:transitonDone ,nowLeft:nowLeft ,userItem:userItem ,cardNum:cardNum}}"  />
+    <template is="card_template"  wx:if="{{ level == SURE &&  userItem.is_face == false}}"
+     data="{{bg: 'b_bg_green',f_c:'f_color_green' , b_c:'b_color_green' ,transitonDone:transitonDone ,nowLeft:nowLeft ,userItem:userItem ,cardNum:cardNum}}"  />
+
+</view>
+<template name="card_template">
+    <view 
+        class="{{transitonDone?'cell-tansiton  cell-nopadding':' cell-nopadding'}} {{bg}}" 
+        style="{{'left: ' + nowLeft +'rpx'}}"
+        
+        bindtap='touchClick'
+        bindtouchstart="touchstartFn"
+        bindtouchmove="touchmoveFn"
+        bindtouchend="touchendFn"
+    >
+        <view class='card_num {{f_c}} '>No.{{cardNum}}</view>
+        <view class='card_detele ' catchtap='deletEvent'>
+
+        <icon type='cancel'></icon>
+        </view>
+        <view class='face_font {{f_c}} ' wx:if="{{userItem.is_face}}"> 
+                <text>{{userItem.face_title}}</text>
+        </view>
+        <view class='back_font {{b_c}}' wx:else>
+                <text>{{userItem.back_explain}}</text>
+        </view> 
+    </view>
+</template>
+
+<!-- data="{{transitonDone:transitonDone ,nowLeft:nowLeft ,userItem:userItem , bg: 'face_bg_gray',face_color:'face_color_gay' , back_color:'back_color_gay' }} " -->
+
+    <!-- <view 
+        class="{{transitonDone?'cell-tansiton  cell-nopadding':' cell-nopadding'}}  {{userItem.is_face == true?'face_bg_gray':'back_bg_gray' }}" 
+        style="{{'left: ' + nowLeft +'rpx'}}"
+        
+            bindtap='touchClick'
+            bindtouchstart="touchstartFn"
+            bindtouchmove="touchmoveFn"
+            bindtouchend="touchendFn"
+        >
+                <view class='face_font ' wx:if="{{userItem.is_face}}"> 
+                        <text>{{userItem.face_title}}</text>
+                </view>
+                <view class='back_font ' wx:else>
+                        <text>{{userItem.back_explain}}</text>
+                </view> 
+    </view> -->

@@ -1,0 +1,26 @@
+<!--components/common/userItem/userItem.wxml-->
+<view 
+  class="{{transitonDone?'cell-tansiton weui-cell cell-nopadding':'weui-cell cell-nopadding'}}" 
+  style="{{'left: ' + nowLeft +'rpx'}}">
+  <view
+    bindtouchstart="touchstartFn"
+    bindtouchmove="touchmoveFn"
+    bindtouchend="touchendFn"
+    class="{{checked?'cell-checked cell-inner':'cell-inner'}}">
+    <view  class="cell__fl contact-avatar-box">
+      <image src="{{avatar||'../../images/click_login.png'}}" class="contact-avatar"></image>
+    </view>
+    <view class="cell__fl p-5 name-view">
+      <text class="contact-name">{{userItem.name}}</text>
+      <text class="contact-coname">{{userItem.company||'—'}}</text>
+    </view>
+  </view>
+  <view class="cell__fr cell_footer">
+      <button 
+        bindtap='editUser' 
+        class="mini-btn mini-btn1 contact-btn" >编辑</button>
+      <button  
+        bindtap='deletEvent' 
+        class="mini-btn mini-btn2 contact-btn" >删除</button>
+    </view>
+</view>

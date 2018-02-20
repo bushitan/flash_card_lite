@@ -1,0 +1,104 @@
+<view class="page" >
+    <view class='xx_mark'>
+        <view class='card_title_border ' >正面</view>
+    </view>
+    <view class="xx_input ">
+        <view class="xx_input__node ">
+            <view class='input_area xx_m_b15'> 
+                <textarea class="" placeholder="请输入生词（可换行）"   placeholder-class="xx_input__placeholder"  
+                value="{{matchConetent}}" bindinput="inputFaceTitle"  />
+            </view> 
+        </view>            
+    </view>
+
+    <view class='space'></view> 
+
+    <view class='xx_mark'>
+        <view class='card_title_border ' >反面</view>
+    </view>
+    <view class="xx_input ">
+        <view class="xx_input__node ">
+            <view class='input_area'> 
+                <textarea class="" placeholder="请输入解释（可换行）"   placeholder-class="xx_input__placeholder"  
+                value="{{matchConetent}}" bindinput="inputBackExplain"  />
+            </view> 
+        </view>            
+    </view>
+
+    <view style='height:20px;'></view>
+    <view class="">
+        <view class="xx_button__primary xx_m_t15_lr15" hover-class='xx_button__primary_press'  type="primary" bindtap="add">增加</view>
+        <view class="xx_button__normal xx_m_t15_lr15" hover-class='xx_button__normal_press'  type="primary" bindtap="back">返回</view>
+
+    </view>
+</view>
+
+
+
+
+
+<!-- <view class="page" >
+
+    <view class='xx_mark'>
+        <view class='card_title_border ' >正面</view>
+    </view>
+    <view class="xx_input ">
+        <view class="xx_input__node ">
+             <view >
+                    <view class="xx_input__name ">生词</view>
+            </view> 
+            <view class='input_area xx_m_b15'> 
+                <textarea class="" placeholder="请输入生词（可换行）"   placeholder-class="xx_input__placeholder"  
+                value="{{matchConetent}}" bindinput="inputContent"  />
+            </view> 
+        </view>            
+    </view>
+
+    <view class='space'></view> 
+
+    <view class='xx_mark'>
+        <view class='card_title_border ' >反面</view>
+    </view>
+    <view class="xx_input ">
+        <view class="xx_input__node ">
+            <view >
+                    <view class="xx_input__name ">文字/图片</view>
+            </view>
+        
+            <view class='xx_input__line'>
+            <view class="weui-cell__bd font_blue" wx:if="{{matchIsBuy}}">图片</view>
+            <view class="weui-cell__bd font_red" wx:else>文字</view>
+                    <switch checked  bindchange="switchIsBuy"/>
+            </view>
+        </view>
+        <view class='xx_line__gray'></view>  
+          <view class="xx_input__node ">
+                <view >
+                        <view class="xx_input__name ">反面标题</view>
+                </view>
+                <view class='xx_input__line'>
+                    <input class="" placeholder="请输入反面标题" bindinput="inputTitle" />
+                </view>
+            </view>
+            <view class='xx_line__gray'></view>  
+
+        <view class="xx_input__node ">
+             <view >
+                    <view class="xx_input__name ">解释</view>
+            </view> 
+            <view class='input_area'> 
+                <textarea class="" placeholder="请输入解释（可换行）"   placeholder-class="xx_input__placeholder"  
+                value="{{matchConetent}}" bindinput="inputContent"  />
+            </view> 
+        </view>            
+        <view style='height:20px;'></view>
+
+        <view class="">
+            <view class="xx_button__primary xx_m_t15_lr15" hover-class='xx_button__primary_press'  type="primary" bindtap="setNews">增加</view>
+            <view class="xx_button__normal xx_m_t15_lr15" hover-class='xx_button__normal_press'  type="primary" bindtap="back">返回</view>
+        </view>
+    </view>
+</view> -->
+
+
+
